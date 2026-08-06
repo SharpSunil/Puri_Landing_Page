@@ -1,0 +1,179 @@
+/* ==========================================
+   GOOGLE FONTS
+========================================== */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root {
+  /* Brand Colors */
+
+  --accent: rgb(140, 20, 7);
+  --lred: #8c0303b8;
+  --charcoal: #0a0000e4;
+  --white: #ffffff;
+  --text: #5d5d5d;
+  --border: #e5dfd3;
+  --grey: #efece6;
+  --max-width: 1200px;
+  --gap: 10px;
+  --trans: all 0.35s ease;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background:#f8faff;
+}
+
+/* ==========================================
+   RESET
+========================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border:1px solid red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: var(--ivory);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+.parent {
+  width: 100%;
+}
+
+.cont {
+  max-width: var(--max-width);
+  margin: auto;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--charcoal);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 54px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--text);
+  font-weight: 400;
+}
+
+/* ==========================================
+   IMAGE HELPERS
+========================================== */
+
+.bg-cover {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.bg-contain {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: var(--section-padding-mobile) 0;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 600px) {
+  .cont {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+}
