@@ -1,0 +1,23 @@
+.footer-parent {
+  .footer-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .logo {
+        img {
+          height: 80px;
+        }
+        .copyright {
+          font-size: 10px;
+        }
+        .copyright a {
+          color: red;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import Logo from "../../assets/puriii.jpeg";
+import Logo from "../../assets/main-logo.png";
 
 import { FiPhoneCall } from "react-icons/fi";
 import { CiMenuFries } from "react-icons/ci";
