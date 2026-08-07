@@ -20,23 +20,23 @@ const Footer = () => {
               <img src={Logo} alt="Logo" />
             </Link>
             <div className="copyright">
-  © Copyright 2026. Made by{" "}
-  <a
-    href="https://sunilshelke.com"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Sunil Shelke
-  </a>
-</div>
+              © Copyright 2026. Made by{" "}
+              <a
+                href="https://sunilshelke.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sunil Shelke
+              </a>
+            </div>
           </div>
           <div className="right-footer">
             <div className="top">
-              <li>Home</li>
-              <li>About</li>
-              <li>Properties</li>
-              <li>Service</li>
-              <li>Contact</li>
+              <Link to="#"><li>Home</li> </Link>
+              <Link to="#"> <li>About</li></Link>
+              <Link to="#"><li>Properties</li></Link>
+              <Link to="#"> <li>Service</li></Link>
+              <Link to="#"><li>Contact</li></Link>
             </div>
             <div className="bottom">
               <a href='#' ><FaFacebookF /></a>
