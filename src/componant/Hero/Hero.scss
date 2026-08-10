@@ -1,0 +1,99 @@
+.hero-parent {
+  .hero-cont {
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background: white;
+    border-radius: 0 100px 0 100px;
+    box-shadow: var(--shadow);
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    // Decorative Shape
+    .shape1,.shape2 {
+      position: absolute;
+      right: 0;
+      width: 180px;
+      height: 140px;
+      background-image: url("../../assets/shape-1.svg");
+      z-index: 2;
+    }
+    .shape2{
+       background-image: url("../../assets/shape-2.svg");
+         right: 20%;
+      bottom: 0;
+      width: 80px;
+      height: 30px;
+    }
+    // LEFT IMAGE
+    .hero-left {
+      width: 50%;
+      height: 100%;
+      background-image: url("../../assets/img-1.jpg");
+      border-radius: 0 0 0 100px;
+      flex-shrink: 0;
+      padding: 10px;
+    }
+    // RIGHT CONTENT
+    .hero-right {
+      width: 50%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      gap: 40px;
+      .content-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .heading {
+          font-size: 56px;
+          line-height: 1.05;
+          font-weight: 600;
+          color: var(--accent);
+          text-shadow: 4px 4px 0px #dce5ff;
+        }
+
+        .desc {
+          font-size: 18px;
+          line-height: 1.8;
+
+          color: var(--charcol);
+        }
+      }
+
+      
+      .button-group {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .price-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        color: var(--accent);
+
+        span {
+          font-size: 56px;
+          line-height: 1;
+          font-weight: 600;
+          letter-spacing: 0;
+
+          color: #72cfa6;
+
+          text-shadow: 3px 3px 0px rgba(114, 207, 166, 0.15);
+        }
+      }
+    }
+  }
+}

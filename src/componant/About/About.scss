@@ -1,0 +1,54 @@
+.about-parent {
+  .about-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .top-side {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .heading {
+        font-size: 50px;
+        line-height: 1.05;
+        font-weight: 600;
+        color: var(--accent);
+        text-shadow: 4px 4px 0px #dce5ff;
+      }
+      .desc {
+        font-size: 20px;
+        color: var(--charcole);
+        line-height: 28px;
+      }
+    }
+
+    .bottom-side {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      .card {
+        display: flex;
+        gap: 10px;
+        background: white;
+        box-shadow: var(--shadow);
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 20px;
+        img {
+          width: 100px;
+        }
+        .card-heading {
+          font-size: 24px;
+          line-height: 1.05;
+          font-weight: 600;
+          color: var(--accent);
+          text-shadow: 4px 4px 0px #dce5ff;
+        }
+        .card-desc{
+            font-size:16px;
+            color:var(--charcole);
+            line-height: 28px;
+        }
+      }
+    }
+  }
+}
