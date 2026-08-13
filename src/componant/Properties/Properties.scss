@@ -24,8 +24,22 @@
     .desc {
       font-size: 20px;
       color: var(--charcoal);
-      width: 90ch;
+      width: 80%;
       padding-bottom: 40px;
+    }
+  }
+}
+@media only screen and (max-width:700px){
+  .properties-parent{
+    .properties-cont{
+      .heading-main{
+        font-size:40px;
+        width:100%;
+      }
+      .desc{
+        font-size: 20px;
+        width:100%;
+      }
     }
   }
 }

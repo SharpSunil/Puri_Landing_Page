@@ -144,3 +144,36 @@
     }
   }
 }
+
+@media only screen and (max-width: 980px) {
+  .property-card,
+  .reverse {
+    flex-direction: column !important;
+    padding: 20px;
+    background: white;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    .property-image {
+      min-height: 100%;
+      width: 100%;
+    }
+    .property-content {
+      width: 100%;
+      padding: 20px 0px;
+    }
+  }
+}
+
+@media only screen and (max-width:600px){
+  .property-card,.reverse{
+    .property-content{
+      gap:10px;
+      .property-title{
+        font-size:36px;
+      }
+      .property-features{
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

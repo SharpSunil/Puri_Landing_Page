@@ -44,10 +44,10 @@ const Hero = () => {
                             link="/contact"
                         />
                     </div>
-                    <div className="price-group">
+                    {/* <div className="price-group">
                         PRICE STARTS AT
                         <span>$542000</span>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

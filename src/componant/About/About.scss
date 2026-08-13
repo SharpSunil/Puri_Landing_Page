@@ -52,3 +52,27 @@
     }
   }
 }
+
+@media only screen and (max-width:1000px){
+  .about-parent{
+    .about-cont{
+     .bottom-side{
+      flex-wrap: wrap;
+     }
+    }
+  }
+}
+@media only screen and (max-width:600px){
+  .about-parent{
+    .about-cont{
+      .top-side{
+        .heading{
+          font-size:40px;
+        }
+        .desc {
+            font-size: 18px;
+          }
+      }
+    }
+  }
+}

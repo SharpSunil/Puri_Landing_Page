@@ -59,7 +59,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
-      width:100%;
+      width: 100%;
     }
 
     .form-group {
@@ -146,6 +146,9 @@
     }
     .magnetic-btn {
       width: fit-content;
+    }
+    button {
+      border: none;
     }
   }
 }
@@ -241,7 +244,7 @@
       .contact-heading {
         margin-bottom: 30px;
 
-        h2 {
+        .c-heading {
           font-size: 36px;
 
           letter-spacing: -1px;

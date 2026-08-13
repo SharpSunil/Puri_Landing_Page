@@ -169,3 +169,17 @@
     }
   }
 }
+@media only screen and (max-width:1000px){
+  .clients-parent{
+    .client-cont{
+      flex-direction: column-reverse;
+      .client-right,.client-left{
+        width: 100%;
+        img{
+          border-radius: 10px;
+          height:400px;
+        }
+      }
+    }
+  }
+}
