@@ -5,7 +5,6 @@ import Logo from "../../assets/main-logo.png";
 import { FiPhoneCall } from "react-icons/fi";
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
-import { Link } from "react-router-dom";
 
 const Header = () => {
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -14,69 +13,191 @@ const Header = () => {
         setMobileMenu(false);
     };
 
+    const handleMenuClick = () => {
+        setMobileMenu(false);
+    };
+
     return (
         <>
             {/* Overlay */}
             {mobileMenu && (
-                <div className="menu-overlay" onClick={closeMenu}></div>
+                <div
+                    className="menu-overlay"
+                    onClick={closeMenu}
+                ></div>
             )}
 
             <header className="header-parent parent">
                 <div className="header-cont cont">
+
                     {/* Logo */}
-                    <Link to="#" className="logo">
+                    <a
+                        href="#home"
+                        className="logo"
+                        onClick={handleMenuClick}
+                    >
                         <img src={Logo} alt="Logo" />
-                    </Link>
+                    </a>
 
                     {/* Desktop Menu */}
                     <div className="right-side">
+
                         <ul className="menu">
-                            <li className="active">HOME</li>
-                            <li>ABOUT</li>
-                            <li>PROPERTIES</li>
-                            <li>SERVICES</li>
-                            <li>CONTACT</li>
+
+                            <li className="active">
+                                <a
+                                    href="#home"
+                                    onClick={handleMenuClick}
+                                >
+                                    HOME
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#about"
+                                    onClick={handleMenuClick}
+                                >
+                                    ABOUT
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#properties"
+                                    onClick={handleMenuClick}
+                                >
+                                    PROPERTIES
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#services"
+                                    onClick={handleMenuClick}
+                                >
+                                    SERVICES
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#contact"
+                                    onClick={handleMenuClick}
+                                >
+                                    CONTACT
+                                </a>
+                            </li>
+
                         </ul>
 
-                        <a href="tel:+917083445507" className="contact">
+                        {/* Phone */}
+                        <a href="tel:+919420214437" className="contact">
                             <FiPhoneCall />
-                            <span>+91 70834 45507</span>
+                            <span>9420214437</span>
                         </a>
+
                     </div>
 
-                    {/* Mobile Button */}
+                    {/* Mobile Menu Button */}
                     <button
+                        type="button"
                         className="menu-btn"
                         onClick={() => setMobileMenu(!mobileMenu)}
+                        aria-label="Toggle menu"
                     >
-                        <CiMenuFries />
+                        {mobileMenu ? <IoClose /> : <CiMenuFries />}
                     </button>
 
                     {/* Mobile Menu */}
-                    <div className={`mobile-menu ${mobileMenu ? "show" : ""}`}>
+                    <div
+                        className={`mobile-menu ${mobileMenu ? "show" : ""
+                            }`}
+                    >
+
+                        {/* Mobile Header */}
                         <div className="mobile-header">
-                            <button className="close-btn" onClick={closeMenu}>
+
+                            <a
+                                href="#home"
+                                className="mobile-logo"
+                                onClick={handleMenuClick}
+                            >
+                                <img
+                                    src={Logo}
+                                    alt="Logo"
+                                />
+                            </a>
+
+                            <button
+                                type="button"
+                                className="close-btn"
+                                onClick={closeMenu}
+                                aria-label="Close menu"
+                            >
                                 <IoClose />
                             </button>
+
                         </div>
 
+                        {/* Mobile Navigation */}
                         <ul className="menu">
-                            <li onClick={closeMenu}>HOME</li>
-                            <li onClick={closeMenu}>ABOUT</li>
-                            <li onClick={closeMenu}>PROPERTIES</li>
-                            <li onClick={closeMenu}>SERVICES</li>
-                            <li onClick={closeMenu}>CONTACT</li>
+
+                            <li>
+                                <a
+                                    href="#home"
+                                    onClick={handleMenuClick}
+                                >
+                                    HOME
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#about"
+                                    onClick={handleMenuClick}
+                                >
+                                    ABOUT
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#properties"
+                                    onClick={handleMenuClick}
+                                >
+                                    PROPERTIES
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#services"
+                                    onClick={handleMenuClick}
+                                >
+                                    SERVICES
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#contact"
+                                    onClick={handleMenuClick}
+                                >
+                                    CONTACT
+                                </a>
+                            </li>
+
                         </ul>
 
-                        <a
-                            href="tel:+917083445507"
-                            className="contact"
-                            onClick={closeMenu}
-                        >
+                        {/* Mobile Phone */}
+                        <a href="tel:+919420214437" className="contact">
                             <FiPhoneCall />
-                            <span>+91 70834 45507</span>
+                            <span>9420214437</span>
                         </a>
+
                     </div>
+
                 </div>
             </header>
         </>

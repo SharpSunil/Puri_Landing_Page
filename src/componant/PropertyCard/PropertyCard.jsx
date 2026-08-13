@@ -18,61 +18,102 @@ const PropertyCard = ({
     reverse = false,
 }) => {
     return (
-        <div className={`property-card ${reverse ? "reverse" : ""
-            }`}>
+        <div className={`property-card ${reverse ? "reverse" : ""}`}>
+
             {/* PROPERTY IMAGE */}
             <div className="property-image">
                 <img src={image} alt={title} />
                 <div className="property-status">{status}</div>
             </div>
+
             {/* PROPERTY CONTENT */}
             <div className="property-content">
+
                 {/* LOCATION */}
-                <div className="property-location"><FiMapPin /><span> {location}</span>
+                <div className="property-location">
+                    <FiMapPin />
+                    <span>{location}</span>
                 </div>
+
                 {/* TITLE */}
                 <div className="property-title">
                     {title}
                 </div>
+
                 {/* PRICE */}
                 <div className="property-price">
                     {price}
                 </div>
+
                 {/* PROPERTY FEATURES */}
                 <div className="property-features">
-                    {/* BEDROOM */}
-                    <div className="feature"><FaBed /><span>{bedrooms}<small> Bedrooms</small></span></div>
-                    {/* BATHROOM */}
+
+                    <div className="feature">
+                        <FaBed />
+                        <span>
+                            {bedrooms}
+                            <small> Bedrooms</small>
+                        </span>
+                    </div>
+
                     <div className="feature">
                         <FaBath />
-                        <span>{bathrooms} <small>Bathrooms</small>
+                        <span>
+                            {bathrooms}
+                            <small> Bathrooms</small>
                         </span>
                     </div>
-                    {/* AREA */}
-                    <div className="feature"><MdSquareFoot />
-                        <span>{area}<small>Square Feet</small>
+
+                    <div className="feature">
+                        <MdSquareFoot />
+                        <span>
+                            {area}
+                            <small> Square Feet</small>
                         </span>
                     </div>
+
                 </div>
+
                 {/* DESCRIPTION */}
                 <div className="property-description">
                     {description}
                 </div>
+
                 {/* ACTION BUTTONS */}
                 <div className="property-actions">
-                    {/* TOUR BUTTON */}
-                    <Button text="Take A Tour" />
-                    {/* SHARE BUTTON */}
 
+                    {/* TAKE A TOUR */}
+                    <Button
+                        text="Take A Tour"
+                        link="#contact"
+                    />
+
+                    {/* SHARE */}
                     <button
                         type="button"
                         className="share-button"
-                    ><FiShare2 /></button>
+                        onClick={() => {
+                            if (navigator.share) {
+                                navigator.share({
+                                    title: title,
+                                    text: `Check out ${title} - ${location}`,
+                                    url: window.location.href,
+                                });
+                            } else {
+                                navigator.clipboard.writeText(
+                                    window.location.href
+                                );
+                                alert("Property link copied!");
+                            }
+                        }}
+                    >
+                        <FiShare2 />
+                    </button>
+
                 </div>
             </div>
         </div>
     );
 };
-
 
 export default PropertyCard;

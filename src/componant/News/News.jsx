@@ -11,34 +11,34 @@ const newsData = [
     {
         id: 1,
         image: img1,
-        tag: "PROPERTY",
-        title: "Lorem ipsum dolor sit amet.",
+        tag: "PROJECT",
+        title: "Discover Premium Living Near ISKCON Katraj",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet laudantium hic nisi sunt! Nisi quo cum deserunt perspiciatis.",
+            "Explore thoughtfully designed 2 & 3 BHK residences offering spacious layouts, peaceful surroundings, premium amenities and excellent connectivity.",
     },
     {
         id: 2,
         image: img2,
-        tag: "REAL ESTATE",
-        title: "Latest trends in real estate.",
+        tag: "LIFESTYLE",
+        title: "Where Tradition Meets Modern Luxury",
         description:
-            "Discover the latest property trends and opportunities available in the modern real estate market.",
+            "Discover a lifestyle that brings together family values, modern comforts, spiritual surroundings and thoughtfully planned spaces for every generation.",
     },
     {
         id: 3,
         image: img3,
-        tag: "INVESTMENT",
-        title: "Smart property investment tips.",
+        tag: "LOCATION",
+        title: "Why Katraj Is a Growing Residential Destination",
         description:
-            "Learn useful tips and strategies to make better property investment decisions for your future.",
+            "With excellent connectivity, reputed educational institutions, healthcare facilities and everyday conveniences, Katraj continues to attract homebuyers.",
     },
     {
         id: 4,
         image: img3,
         tag: "INVESTMENT",
-        title: "Smart property investment tips.",
+        title: "Why Invest in a Premium Home in South Pune",
         description:
-            "Learn useful tips and strategies to make better property investment decisions for your future.",
+            "Prime locations, improving infrastructure and growing residential demand make South Pune an attractive destination for homeowners and long-term investors.",
     },
 ];
 
@@ -59,14 +59,11 @@ const News = () => {
                 <div className="top-news">
 
                     <div className="heading">
-                        Recent News
+                        Explore More
                     </div>
 
                     <div className="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At nihil
-                        neque eligendi animi mollitia eius numquam voluptatum, fuga ullam
-                        totam tempore consequatur! Distinctio libero a voluptate optio
-                        illo inventore quas.
+                        Discover more about our premium residences, the advantages of the Katraj location, modern lifestyle amenities, and why this project is an ideal choice for families looking for comfort, connectivity, and long-term value.
                     </div>
 
                 </div>

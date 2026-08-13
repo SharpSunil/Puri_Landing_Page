@@ -12,78 +12,86 @@ const Contact = () => {
 
                 {/* Heading */}
                 <div className="contact-heading">
-                    <div className="c-heading">Get In Touch With Us</div>
+                    <div className="c-heading">Book Your Private Site Visit</div>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-                        eiusmod tempor incididunt ut labore et dolore.
+                        Experience premium 2 & 3 BHK residences near ISKCON Temple, Katraj. Share your details and our sales expert will get in touch with you to schedule a private project tour.
                     </p>
                 </div>
 
                 {/* Contact Form */}
                 <form className="contact-form">
+
+                    {/* Name + Email */}
                     <div className="form-row">
+
                         <div className="form-group">
                             <label>Your Name</label>
+
                             <input
                                 type="text"
-                                placeholder="Johnathon Doelsen"
+                                name="name"
+                                placeholder="Enter your full name"
                             />
                         </div>
 
                         <div className="form-group">
                             <label>Email Address</label>
+
                             <input
                                 type="email"
-                                placeholder="john@example.com"
+                                name="email"
+                                placeholder="Enter your email address"
                             />
                         </div>
+
                     </div>
+
+
+                    {/* Phone Number */}
+                    <div className="form-group full-width">
+
+                        <label>Phone Number</label>
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Enter your mobile number"
+                        />
+
+                    </div>
+
+
                     {/* Looking For */}
                     <div className="form-group full-width">
+
                         <label htmlFor="lookingFor">
-                            I'm Looking for ...
+                            I'm Looking For...
                         </label>
 
-                        <select id="lookingFor" name="lookingFor" defaultValue="">
+                        <select
+                            id="lookingFor"
+                            name="lookingFor"
+                            defaultValue=""
+                        >
                             <option value="" disabled>
-                                Select your requirement
+                                Select your preferred home
                             </option>
 
-                            <option value="1-bedroom">
-                                1 Bedroom Apartment
+                            <option value="2-bhk">
+                                2 BHK Residence
                             </option>
 
-                            <option value="2-bedroom">
-                                2 Bedroom Apartment
+                            <option value="3-bhk">
+                                3 BHK Residence
                             </option>
 
-                            <option value="3-bedroom">
-                                3 Bedroom Villa Apartment
-                            </option>
-
-                            <option value="4-bedroom">
-                                4 Bedroom Villa
-                            </option>
-
-                            <option value="commercial">
-                                Commercial Property
-                            </option>
-
-                            <option value="office">
-                                Office Space
-                            </option>
-
-                            <option value="land">
-                                Land / Plot
-                            </option>
-
-                            <option value="other">
-                                Other
+                            <option value="both">
+                                2 & 3 BHK - Need More Information
                             </option>
                         </select>
-                    </div>
 
+                    </div>
 
 
                     {/* Message */}
@@ -92,18 +100,22 @@ const Contact = () => {
                         <label>Your Message</label>
 
                         <textarea
-                            placeholder="Please write in brief..."
+                            name="message"
+                            placeholder="Tell us how we can assist you..."
                             rows="7"
                         ></textarea>
 
                     </div>
 
-                    {/* Button */}
-                    <button
-                        className="magnetic-btn"
 
+                    {/* Submit Button */}
+                    <button
+                        type="submit"
+                        className="magnetic-btn"
                     >
-                        <span className="text">Contact Us</span>
+                        <span className="text">
+                            Book Site Visit
+                        </span>
 
                         <span className="icon">
                             <TiArrowRight />

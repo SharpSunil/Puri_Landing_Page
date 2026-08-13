@@ -10,46 +10,46 @@ import {
 import "./Service.scss";
 
 const services = [
-  {
-    id: 1,
-    title: "Leasing Advisory",
-    description:
-      "There are many variations of passages of lorem ipsum available.",
-    icon: <FaBuilding />,
-    color: "blue",
-  },
-  {
-    id: 2,
-    title: "Strategy & Consulting",
-    description:
-      "There are many variations of passages of lorem ipsum available.",
-    icon: <FaHandshake />,
-    color: "orange",
-  },
-  {
-    id: 3,
-    title: "Space Enablement",
-    description:
-      "There are many variations of passages of lorem ipsum available.",
-    icon: <FaDoorOpen />,
-    color: "green",
-  },
-  {
-    id: 4,
-    title: "Portfolio Services",
-    description:
-      "There are many variations of passages of lorem ipsum available.",
-    icon: <FaPersonWalking />,
-    color: "purple",
-  },
-  {
-    id: 5,
-    title: "Facilities Management",
-    description:
-      "There are many variations of passages of lorem ipsum available.",
-    icon: <FaWind />,
-    color: "red",
-  },
+    {
+        id: 1,
+        title: "Property Consultation",
+        description:
+            "Get expert guidance to choose the right 2 or 3 BHK home based on your family's needs, lifestyle, and budget.",
+        icon: <FaBuilding />,
+        color: "blue",
+    },
+    {
+        id: 2,
+        title: "Site Visit Assistance",
+        description:
+            "Schedule a private site visit and explore the residences, amenities, surroundings, and key project features.",
+        icon: <FaHandshake />,
+        color: "orange",
+    },
+    {
+        id: 3,
+        title: "Home Buying Assistance",
+        description:
+            "From selecting your home to completing the process, our team provides a smooth and transparent buying experience.",
+        icon: <FaDoorOpen />,
+        color: "green",
+    },
+    {
+        id: 4,
+        title: "Investment Guidance",
+        description:
+            "Make informed property decisions with guidance on location advantages, project potential, and long-term value.",
+        icon: <FaPersonWalking />,
+        color: "purple",
+    },
+    {
+        id: 5,
+        title: "After-Sales Support",
+        description:
+            "Our support continues beyond booking with dedicated assistance throughout your homeownership journey.",
+        icon: <FaWind />,
+        color: "red",
+    },
 ];
 
 const Service = () => {
@@ -62,8 +62,7 @@ const Service = () => {
       <div className="title">Our Services</div>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-        eiusmod tempor.
+      From finding the right home to making your investment decision, we provide a seamless and transparent experience designed around your family's needs.
       </p>
     </div>
 

@@ -19,14 +19,11 @@ const Hero = () => {
                 <div className="hero-right">
                     <div className="content-box">
                         <div className="heading">
-                            Elegant homes for sale
+                            South Pune's Most Awaited Premium Family Address
                         </div>
 
                         <div className="desc">
-                            There are many variations of passages of lorem ipsum
-                            available, but the majority have suffered alteration in
-                            some form by injected humour or randomised words which
-                            don't look even slightly believable.
+                            Experience thoughtfully designed 2 & 3 BHK homes where spirituality, luxury, and family values come together. Discover premium living with spacious residences, modern amenities, and a peaceful location near ISKCON Temple, Katraj.
                         </div>
 
                     </div>
@@ -35,13 +32,13 @@ const Hero = () => {
 
                     <div className="button-group">
                         <Button
-                            text="VIEW PROPERTIES"
-                            link="/properties"
+                            text="BOOK YOUR PRIVATE SITE"
+                            link="#properties"
                         />
 
                         <Button
-                            text="GET IN TOUCH"
-                            link="/contact"
+                            text="SCHEDULE A FREE PROJECT PRESENTATION"
+                            link="#contact"
                         />
                     </div>
                     {/* <div className="price-group">

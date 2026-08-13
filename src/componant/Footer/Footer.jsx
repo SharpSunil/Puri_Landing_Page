@@ -1,54 +1,120 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
 
 import Logo from "../../assets/main-logo.png";
+
 import { IoLogoInstagram } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 
+import "./Footer.scss";
 
-import "./Footer.scss"
 const Footer = () => {
-  return (
-    <>
-      <div className="footer-parent parent">
-        <div className="footer-cont cont">
-          <div className="left-footer">
-            {/* Logo */}
-            <Link to="#" className="logo">
-              <img src={Logo} alt="Logo" />
-            </Link>
-            <div className="copyright">
-              © Copyright 2026. Made by{" "}
-              <a
-                href="https://sunilshelke.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Sunil Shelke
-              </a>
-            </div>
-          </div>
-          <div className="right-footer">
-            <div className="top">
-              <Link to="#"><li>Home</li> </Link>
-              <Link to="#"> <li>About</li></Link>
-              <Link to="#"><li>Properties</li></Link>
-              <Link to="#"> <li>Service</li></Link>
-              <Link to="#"><li>Contact</li></Link>
-            </div>
-            <div className="bottom">
-              <a href='#' ><FaFacebookF /></a>
-              <a href='#' ><IoLogoInstagram /></a>
-              <a href='#' ><FaXTwitter /></a>
-              <a href='#' ><FaLinkedinIn /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  )
-}
+    return (
+        <>
+            <footer className="footer-parent parent">
+                <div className="footer-cont cont">
 
-export default Footer
+                    {/* Left Footer */}
+                    <div className="left-footer">
+
+                        {/* Logo */}
+                        <a href="#home" className="logo">
+                            <img
+                                src={Logo}
+                                alt="Logo"
+                            />
+                        </a>
+
+                        {/* Copyright */}
+                        <div className="copyright">
+                            © Copyright 2026. Made by{" "}
+                            <a
+                                href="https://sunilshelke.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Sunil Shelke
+                            </a>
+                        </div>
+
+                    </div>
+
+                    {/* Right Footer */}
+                    <div className="right-footer">
+
+                        {/* Footer Navigation */}
+                        <nav className="top">
+
+                            <a href="#home">
+                                Home
+                            </a>
+
+                            <a href="#about">
+                                About
+                            </a>
+
+                            <a href="#properties">
+                                Properties
+                            </a>
+
+                            <a href="#services">
+                                Service
+                            </a>
+
+                            <a href="#contact">
+                                Contact
+                            </a>
+
+                        </nav>
+
+                        {/* Social Media */}
+                        <div className="bottom">
+
+                            <a
+                                href="#"
+                                aria-label="Facebook"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaFacebookF />
+                            </a>
+
+                            <a
+                                href="#"
+                                aria-label="Instagram"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <IoLogoInstagram />
+                            </a>
+
+                            <a
+                                href="#"
+                                aria-label="X"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaXTwitter />
+                            </a>
+
+                            <a
+                                href="#"
+                                aria-label="LinkedIn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaLinkedinIn />
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </footer>
+        </>
+    );
+};
+
+export default Footer;

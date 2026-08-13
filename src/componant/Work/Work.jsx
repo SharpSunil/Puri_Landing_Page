@@ -22,7 +22,7 @@ const Work = () => {
 
                         <div className="btn-group">
                             <div className="heading">
-                                Want to sell a home in the US?
+                               Book Your Private Site Visit
                             </div>
 
                             <div className="btn">
@@ -31,7 +31,7 @@ const Work = () => {
                         </div>
 
                         <div className="desc">
-                            Get in touch with our brokers!
+                            Experience premium 2 & 3 BHK residences near ISKCON, Katraj.
                         </div>
 
                     </div>
@@ -45,7 +45,7 @@ const Work = () => {
 
                         <div className="btn-group">
                             <div className="heading">
-                                Want to buy a home in the UK?
+                                Talk To Our Sales Expert
                             </div>
 
                             <div className="btn">
@@ -54,7 +54,7 @@ const Work = () => {
                         </div>
 
                         <div className="desc">
-                            Call the broker for a quote!
+                           Get project details, pricing and availability.
                         </div>
 
                     </div>
@@ -69,22 +69,15 @@ const Work = () => {
                     <div className="bottom-left">
 
                         <div className="heading">
-                            We Connect People With Their Dreams
+                           Building More Than Homes. Building Legacies.
                         </div>
 
                         <div className="top-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt soluta nobis assumenda
-                            labore quod maxime.
+                            At Puri & Associates, we believe that a home is more than just four walls—it is where generations grow, traditions are celebrated, and lifelong memories are created.
                         </div>
 
                         <div className="desc">
-                            There are many variations of passages of lorem ipsum
-                            available. Nam libero tempore cum soluta nobis est
-                            eligendi optio cumque nihil impedit quo minus id quod
-                            maxime but the majority have suffered alteration in some
-                            form by injected humour or randomised words which don't
-                            look even slightly believable.
+                           With a strong commitment to quality construction, premium specifications, and customer-first values, we develop homes that combine modern comforts with timeless design principles. Every detail is carefully planned to deliver an elevated lifestyle while maintaining functionality, sustainability, and long-term value.
                         </div>
 
                       

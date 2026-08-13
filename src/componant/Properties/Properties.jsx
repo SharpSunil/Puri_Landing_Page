@@ -10,61 +10,46 @@ const Properties = () => {
         {
             id: 1,
             image: propertyImg1,
-            status: "FOR SALE",
-            location: "30 Beverly Hills, Los Angeles",
-            title: "Best Delux Home",
-            price: "$110,000,000",
-            bedrooms: 8,
-            bathrooms: 9,
-            area: "9542",
+            status: "FEATURED",
+            location: "Near ISKCON Temple, Katraj, Pune",
+            title: "Katraj's Most Awaited Landmark",
+            price: "₹95 L - ₹1.40 Cr*",
+            bedrooms: "2 & 3",
+            bathrooms: "820–1200",
+            area: "2",
             reverse: false,
             description:
-                "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form by injected humour or randomised words which don't look even slightly believable.",
+                "A boutique residential community near ISKCON Temple, designed for families seeking peace, privacy and premium living. Thoughtfully planned homes combine Vastu-aligned layouts, panoramic views and modern lifestyle amenities."
         },
 
         {
             id: 2,
             image: propertyImg2,
-            status: "FOR RENT",
-            location: "5 Park Avenue, New York",
-            title: "Luxury Modern Villa",
-            price: "$2,500,000",
-            bedrooms: 5,
-            bathrooms: 4,
-            area: "6200",
+            status: "FOR SALE",
+            location: "Mahesh Society, Bibwewadi, Pune",
+            title: "Empire Legacy",
+            price: "Price On Request",
+            bedrooms: "2 BHK",
+            bathrooms: "3 BHK",
+            area: "666–1166",
             reverse: true,
             description:
-                "Beautiful modern property located in a premium neighborhood with excellent amenities and outstanding architecture.",
+                "A landmark residential project in Mahesh Society, Bibwewadi, offering spacious 2 & 3 BHK homes for comfortable family living. Enjoy a prestigious neighbourhood, excellent connectivity, convenient access to schools, hospitals, shopping and major roads."
         },
 
         {
             id: 3,
             image: propertyImg1,
             status: "FOR SALE",
-            location: "50 Sunset Boulevard, Miami",
-            title: "Modern Beach House",
-            price: "$4,500,000",
-            bedrooms: 6,
-            bathrooms: 5,
-            area: "7200",
+            location: "Mohammed Wadi, NIBM Road, Pune",
+            title: "Aura Aiwa",
+            price: "₹1.53 Cr - ₹2.03 Cr*",
+            bedrooms: "3 BHK",
+            bathrooms: "3.5 BHK",
+            area: "4 BHK",
             reverse: false,
             description:
-                "A beautiful modern beach house with spacious rooms, premium amenities and amazing surroundings.",
-        },
-
-        {
-            id: 4,
-            image: propertyImg2,
-            status: "FOR SALE",
-            location: "15 Palm Street, California",
-            title: "Luxury Family Home",
-            price: "$3,200,000",
-            bedrooms: 4,
-            bathrooms: 3,
-            area: "5800",
-            reverse: true,
-            description:
-                "A stunning family home offering comfortable living spaces and modern architecture.",
+                "A premium single-tower residential project in Mohammed Wadi, designed for spacious and peaceful living. Featuring well-planned homes, excellent carpet efficiency and modern amenities, it offers an elevated lifestyle in a well-connected location."
         },
     ];
 
@@ -73,9 +58,9 @@ const Properties = () => {
             <div className="shape1 bg-cover"></div>
             <div className="properties-cont cont">
 
-                <div className="heading-main">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div className="heading-main">Where Tradition Meets Luxury</div>
                 <div className="desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vitae alias commodi numquam quaerat in perferendis harum. Veritatis aliquam sint quaerat vitae, et eaque! Iste deserunt quia asperiores exercitationem dolor?
+                    Welcome to a boutique residential community near ISKCON Temple, Katraj, where premium living meets cultural richness. Designed for families who appreciate modern luxury and traditional values, this exclusive development offers spacious residences, world-class amenities, and seamless connectivity in one of South Pune's fastest-growing locations.
                 </div>
                 {properties.map((property) => (
                     <PropertyCard

@@ -8,20 +8,20 @@ const About = () => {
         {
             id: 1,
             img: img1,
-            title: "Lorem ipsum dolor sit.",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta amet repellat aspernatur deleniti hic illum quos odio, sint sunt id, ratione saepe assumenda, excepturi adipisci dolorem cupiditate error tenetur eligendi!"
+            title: "Quality Construction",
+            desc: "Every home is thoughtfully designed with quality construction, premium specifications, and attention to detail to create spaces built for lasting comfort."
         },
         {
             id: 2,
             img: img2,
-            title: "Lorem ipsum dolor sit.",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta amet repellat aspernatur deleniti hic illum quos odio, sint sunt id, ratione saepe assumenda, excepturi adipisci dolorem cupiditate error tenetur eligendi!"
+            title: "Customer First",
+            desc: "From planning to possession, we focus on transparency, trust, and customer satisfaction to make your home-buying journey simple and reassuring."
         },
         {
             id: 3,
             img: img3,
-            title: "Lorem ipsum dolor sit.",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta amet repellat aspernatur deleniti hic illum quos odio, sint sunt id, ratione saepe assumenda, excepturi adipisci dolorem cupiditate error tenetur eligendi!"
+            title: "Timeless Value",
+            desc: "Our homes combine modern comforts with timeless design principles, creating spaces where families can grow, connect, and build lasting memories."
         }
     ]
     return (
@@ -29,8 +29,8 @@ const About = () => {
             <div className="about-parent parent">
                 <div className="about-cont cont">
                     <div className="top-side">
-                        <div className="heading">Lorem ipsum dolor sit, amet.</div>
-                        <div className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi numquam omnis. Culpa quam tempore optio aperiam nulla quae cumque eligendi alias ex, ratione rerum dignissimos debitis, aspernatur inventore veniam!</div>
+                        <div className="heading">Building More Than Homes. Building Legacies.</div>
+                        <div className="desc">At Puri & Associates, we believe a home is more than just four walls—it is where generations grow, traditions are celebrated, and lifelong memories are created. With a commitment to quality construction, thoughtful planning, and customer-first values, we create homes designed for comfort, trust, and long-term value.!</div>
                     </div>
                     <div className="bottom-side">
                         {carddata.map((item, index) => (

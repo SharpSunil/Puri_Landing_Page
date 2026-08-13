@@ -39,31 +39,29 @@ const Clients = () => {
                         >
 
                             {/* SLIDE 1 */}
-                            <SwiperSlide>
 
+                            <SwiperSlide>
                                 <div className="client-slide">
 
                                     <h3 className="client-subheading">
-                                        Reliable People
+                                        Trusted Experience
                                     </h3>
 
                                     <div className="client-quote">
-
                                         <span className="quote quote-open">
                                             “
                                         </span>
 
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit
-                                            sed do eiusmod tempor incididunt aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore
-                                            beatae vitae dicta sunt explicabo magna aliqua.
+                                            The entire experience was smooth and professional.
+                                            The team understood our requirements, explained
+                                            everything clearly and helped us choose the right
+                                            home for our family.
                                         </p>
 
                                         <span className="quote quote-close">
                                             ”
                                         </span>
-
                                     </div>
 
                                     <div className="client-person">
@@ -71,52 +69,47 @@ const Clients = () => {
                                         <div className="client-person-image">
                                             <img
                                                 src={clientProfile}
-                                                alt="Jerry Johnston"
+                                                alt="Amit Kulkarni"
                                             />
                                         </div>
 
                                         <div className="client-person-info">
                                             <h4>
-                                                Jerry Johnston
+                                                Amit Kulkarni
                                             </h4>
 
                                             <p>
-                                                Acme Boutique, UK
+                                                Pune
                                             </p>
                                         </div>
 
                                     </div>
 
                                 </div>
-
                             </SwiperSlide>
 
-
-                            {/* SLIDE 2 */}
                             <SwiperSlide>
-
                                 <div className="client-slide">
 
                                     <h3 className="client-subheading">
-                                        Excellent Service
+                                        Excellent Guidance
                                     </h3>
 
                                     <div className="client-quote">
-
                                         <span className="quote quote-open">
                                             “
                                         </span>
 
                                         <p>
-                                            Our experience was excellent from beginning to end.
-                                            The entire team was professional, helpful and always
-                                            available whenever we needed assistance.
+                                            We really appreciated the transparency and guidance
+                                            throughout the property selection process. The team
+                                            was always available to answer our questions and
+                                            made the entire journey comfortable.
                                         </p>
 
                                         <span className="quote quote-close">
                                             ”
                                         </span>
-
                                     </div>
 
                                     <div className="client-person">
@@ -124,30 +117,27 @@ const Clients = () => {
                                         <div className="client-person-image">
                                             <img
                                                 src={clientProfile}
-                                                alt="Michael Anderson"
+                                                alt="Neha Patil"
                                             />
                                         </div>
 
                                         <div className="client-person-info">
                                             <h4>
-                                                Michael Anderson
+                                                Neha Patil
                                             </h4>
 
                                             <p>
-                                                Prime Properties, UK
+                                                Pune
                                             </p>
                                         </div>
 
                                     </div>
 
                                 </div>
-
                             </SwiperSlide>
 
 
-                            {/* SLIDE 3 */}
                             <SwiperSlide>
-
                                 <div className="client-slide">
 
                                     <h3 className="client-subheading">
@@ -155,21 +145,20 @@ const Clients = () => {
                                     </h3>
 
                                     <div className="client-quote">
-
                                         <span className="quote quote-open">
                                             “
                                         </span>
 
                                         <p>
-                                            A very professional team with great communication.
-                                            They understood our requirements perfectly and
-                                            delivered everything exactly as expected.
+                                            A professional and supportive team that genuinely
+                                            understands the needs of home buyers. Their
+                                            communication was clear and the overall experience
+                                            gave us complete confidence in our decision.
                                         </p>
 
                                         <span className="quote quote-close">
                                             ”
                                         </span>
-
                                     </div>
 
                                     <div className="client-person">
@@ -177,24 +166,23 @@ const Clients = () => {
                                         <div className="client-person-image">
                                             <img
                                                 src={clientProfile}
-                                                alt="David Wilson"
+                                                alt="Rahul Deshmukh"
                                             />
                                         </div>
 
                                         <div className="client-person-info">
                                             <h4>
-                                                David Wilson
+                                                Rahul Deshmukh
                                             </h4>
 
                                             <p>
-                                                Urban Estates, UK
+                                                Pune
                                             </p>
                                         </div>
 
                                     </div>
 
                                 </div>
-
                             </SwiperSlide>
 
                         </Swiper>
