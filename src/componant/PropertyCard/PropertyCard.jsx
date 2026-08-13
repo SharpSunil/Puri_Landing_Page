@@ -3,7 +3,8 @@ import { FiMapPin, FiShare2 } from "react-icons/fi";
 import { FaBed, FaBath } from "react-icons/fa";
 import { MdSquareFoot } from "react-icons/md";
 import "./PropertyCard.scss";
-import Button from "../../../../sbProject/src/componant/button/Buttonmain";
+import Button from "../Button/Button";
+
 const PropertyCard = ({
     image,
     status = "FOR SALE",

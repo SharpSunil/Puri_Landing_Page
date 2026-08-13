@@ -64,7 +64,7 @@
         align-items: center;
         gap: 20px;
         .heading {
-          font-size: 22px;
+          font-size: 24px;
           font-weight: 600;
           text-shadow: 4px 4px 0px #dce5ff;
           color: var(--accent);
@@ -79,7 +79,7 @@
           background: var(--charcoal);
           color: white;
           border-radius: 5px;
-          font-size: 20px;
+          font-size: 22px;
           cursor: pointer;
           transition: var(--trans);
           &:hover {
@@ -91,7 +91,7 @@
       // DESCRIPTION
 
       .desc {
-        font-size: 16px;
+        font-size: 20px;
         color: var(--charcoal);
       }
     }
@@ -114,7 +114,7 @@
         gap: 20px;
 
         .heading {
-          font-size: 36px;
+          font-size: 40px;
           line-height: 1.2;
           font-weight: 600;
           text-shadow: 4px 4px 0px #dce5ff;
@@ -122,13 +122,13 @@
         }
 
         .top-desc {
-          font-size: 16px;
+          font-size: 20px;
           line-height: 1.7;
           color: var(--charcoal);
         }
 
         .desc {
-          font-size: 16px;
+          font-size: 20px;
           line-height: 1.7;
           color: var(--charcoal);
         }

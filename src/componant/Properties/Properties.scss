@@ -10,11 +10,11 @@
   .properties-cont {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 20px;
     position: relative;
     z-index: 4;
     .heading-main {
-      font-size: 34px;
+      font-size: 40px;
       line-height: 1.05;
       font-weight: 600;
       text-shadow: 4px 4px 0px #dce5ff;
@@ -22,7 +22,7 @@
       color: var(--accent);
     }
     .desc {
-      font-size: 18px;
+      font-size: 20px;
       color: var(--charcoal);
       width: 90ch;
       padding-bottom: 40px;

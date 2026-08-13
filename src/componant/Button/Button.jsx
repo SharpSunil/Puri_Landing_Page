@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-"./Button.scss"
+import "./button.scss"
 import { TiArrowRight } from "react-icons/ti";
 const Button = ({ text = "Let's Talk", link = "/", onClick }) => {
     return (
@@ -11,7 +11,6 @@ const Button = ({ text = "Let's Talk", link = "/", onClick }) => {
                 onClick={onClick}
             >
                 <span className="text">{text}</span>
-
                 <span className="icon">
                     <TiArrowRight />
                 </span>

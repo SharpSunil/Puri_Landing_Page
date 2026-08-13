@@ -11,7 +11,8 @@
     position: relative;
     overflow: hidden;
     // Decorative Shape
-    .shape1,.shape2 {
+    .shape1,
+    .shape2 {
       position: absolute;
       right: 0;
       width: 180px;
@@ -19,9 +20,9 @@
       background-image: url("../../assets/shape-1.svg");
       z-index: 2;
     }
-    .shape2{
-       background-image: url("../../assets/shape-2.svg");
-         right: 20%;
+    .shape2 {
+      background-image: url("../../assets/shape-2.svg");
+      right: 20%;
       bottom: 0;
       width: 80px;
       height: 30px;
@@ -32,7 +33,6 @@
       height: 100%;
       background-image: url("../../assets/img-1.jpg");
       border-radius: 0 0 0 100px;
-      flex-shrink: 0;
       padding: 10px;
     }
     // RIGHT CONTENT
@@ -59,14 +59,13 @@
         }
 
         .desc {
-          font-size: 18px;
-          line-height: 1.8;
+          font-size: 22px;
+          line-height: 1.6;
 
           color: var(--charcol);
         }
       }
 
-      
       .button-group {
         display: flex;
         align-items: center;
@@ -92,6 +91,67 @@
           color: #72cfa6;
 
           text-shadow: 3px 3px 0px rgba(114, 207, 166, 0.15);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hero-parent {
+    padding: 10px;
+    .hero-cont {
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 10px;
+      .shape1,
+      .shape2 {
+        display: none;
+      }
+      .hero-left,
+      .hero-right {
+        width: 100%;
+        flex-shrink: none;
+        .content-box {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-parent {
+    .hero-cont {
+      .hero-left,
+      .hero-right {
+        border-radius: 10px;
+        .content-box {
+          gap: 10px;
+          .heading {
+            font-size: 40px;
+          }
+          .desc {
+            font-size: 18px;
+          }
+        }
+      }
+      .hero-right {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero-parent {
+    .hero-cont {
+      .hero-left,
+      .hero-right {
+        .button-group {
+          flex-direction: column;
+          .magnetic-btn {
+            width: 100%;
+            border-radius: 10px;
+          }
         }
       }
     }

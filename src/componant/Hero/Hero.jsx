@@ -1,6 +1,8 @@
 import React from "react";
 import "./Hero.scss";
-import Button from "../../../../sbProject/src/componant/button/Buttonmain";
+import Button from "../Button/Button";
+
+
 
 const Hero = () => {
     return (

@@ -1,7 +1,7 @@
 /* ==========================================
    GOOGLE FONTS
 ========================================== */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
 /* ==========================================
    ROOT VARIABLES
 ========================================== */
@@ -20,7 +20,7 @@
   --gap: 10px;
   --trans: all 0.35s ease;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  background:#f8faff;
+  background: #f8faff;
 }
 
 /* ==========================================
@@ -40,7 +40,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Cormorant", serif;
   background: var(--ivory);
   color: var(--text);
   overflow-x: hidden;
@@ -65,6 +65,7 @@ ul {
   max-width: var(--max-width);
   margin: auto;
   width: 100%;
+  padding:0px 10px;
 }
 
 /* ==========================================
@@ -77,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant", serif;
   color: var(--charcoal);
   font-weight: 700;
   line-height: 1.1;
@@ -108,7 +109,8 @@ h6 {
 }
 
 p {
-  font-family: "Inter", sans-serif;
+  font-family: "Cormorant", serif;
+  // font-family: "Inter", sans-serif;
   font-size: 18px;
   line-height: 1.9;
   color: var(--text);

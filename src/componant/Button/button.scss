@@ -1,0 +1,78 @@
+.magnetic-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 5px 8px 5px 22px;
+
+  background: var(--accent);
+  border-radius: 999px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition);
+  .text {
+    position: relative;
+    z-index: 2;
+
+    font-family: "comrad", serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+
+    transition: var(--transition);
+  }
+
+  .icon {
+    position: relative;
+    z-index: 2;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--white);
+    color: var(--accent);
+    font-size: 22px;
+    transition: var(--transition);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--charcoal);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.45s ease;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+
+  &:hover {
+    border-color: var(--accent);
+
+    .text {
+      color: var(--white);
+    }
+
+    .icon {
+      background: var(--white);
+      color: var(--charcoal);
+      transform: translateX(6px);
+    }
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
