@@ -3,7 +3,7 @@ import React from "react";
 import Hero from "../../componant/Hero/Hero";
 import About from "../../componant/About/About";
 import Work from "../../componant/Work/Work";
-import Properties from "../../componant/PRoperties/Properties";
+import Properties from "../../componant/Properties/Properties";
 import Service from "../../componant/Service/Service";
 import Clients from "../../componant/Clients/Clients";
 import News from "../../componant/News/News";

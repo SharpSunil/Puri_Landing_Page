@@ -118,7 +118,7 @@ const Header = () => {
                         {/* Mobile Header */}
                         <div className="mobile-header">
 
-                            <a
+                            {/* <a
                                 href="#home"
                                 className="mobile-logo"
                                 onClick={handleMenuClick}
@@ -127,7 +127,7 @@ const Header = () => {
                                     src={Logo}
                                     alt="Logo"
                                 />
-                            </a>
+                            </a> */}
 
                             <button
                                 type="button"
