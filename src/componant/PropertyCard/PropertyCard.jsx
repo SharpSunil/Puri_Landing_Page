@@ -16,6 +16,7 @@ const PropertyCard = ({
     area,
     description,
     reverse = false,
+    onTakeTour,
 }) => {
     return (
         <div className={`property-card ${reverse ? "reverse" : ""}`}>
@@ -85,7 +86,11 @@ const PropertyCard = ({
                     {/* TAKE A TOUR */}
                     <Button
                         text="Take A Tour"
-                        link="#contact"
+                        link="#"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            onTakeTour();
+                        }}
                     />
 
                     {/* SHARE */}
@@ -103,6 +108,7 @@ const PropertyCard = ({
                                 navigator.clipboard.writeText(
                                     window.location.href
                                 );
+
                                 alert("Property link copied!");
                             }
                         }}
