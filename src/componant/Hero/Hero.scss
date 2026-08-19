@@ -31,9 +31,10 @@
     .hero-left {
       width: 50%;
       height: 100%;
-      background-image: url("../../assets/img-1.jpg");
+      background-image: url("../../assets/img/hero.jpg");
       border-radius: 0 0 0 100px;
       padding: 10px;
+      border:10px solid var(--accent);
     }
     // RIGHT CONTENT
     .hero-right {

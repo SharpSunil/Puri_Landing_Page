@@ -1,15 +1,14 @@
 import React from "react";
 import "./Clients.scss";
 
-import clientImage from "../../assets/img-6.jpg";
-import clientProfile from "../../assets/user-1.jpg";
+import clientImage from "../../assets/img/group.jpg";
+import clientProfile from "../../assets/img/amit.jpg";
+import clientProfilee from "../../assets/img/neha.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/pagination";
-
 const Clients = () => {
     return (
         <section className="clients-parent parent">
@@ -21,7 +20,6 @@ const Clients = () => {
                     <div className="client-heading">
                         What clients say
                     </div>
-
                     <div className="bottom-slide">
                         <Swiper
                             spaceBetween={30}
@@ -116,7 +114,7 @@ const Clients = () => {
 
                                         <div className="client-person-image">
                                             <img
-                                                src={clientProfile}
+                                                src={clientProfilee}
                                                 alt="Neha Patil"
                                             />
                                         </div>

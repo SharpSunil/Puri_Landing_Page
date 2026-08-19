@@ -134,21 +134,15 @@
         }
       }
 
-      // ---------------------------------
-      // RIGHT IMAGE
-      // ---------------------------------
 
       .bottom-right {
         width: 50%;
-
         position: relative;
-
         overflow: hidden;
-
         .work-image {
           width: 100%;
           height: 100%;
-          background-image: url("../../assets/img-2.jpg");
+          background-image: url("../../assets/img/img3.jpg");
           border-radius: 0 0 0 100px;
         }
       }
