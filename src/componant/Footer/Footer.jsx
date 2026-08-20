@@ -5,8 +5,7 @@ import Logo from "../../assets/main-logo.png";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
-
+import { FiYoutube } from "react-icons/fi";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -70,9 +69,17 @@ const Footer = () => {
 
                         {/* Social Media */}
                         <div className="bottom">
+                            <a
+                                href="https://www.youtube.com/@KPuriandAssociates"
+                                aria-label="Youtube"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FiYoutube />
+                            </a>
 
                             <a
-                                href="#"
+                                href="https://www.facebook.com/profile.php?id=61592706615704"
                                 aria-label="Facebook"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -81,7 +88,7 @@ const Footer = () => {
                             </a>
 
                             <a
-                                href="#"
+                                href="https://www.instagram.com/kpuriandassociates/"
                                 aria-label="Instagram"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -89,23 +96,9 @@ const Footer = () => {
                                 <IoLogoInstagram />
                             </a>
 
-                            <a
-                                href="#"
-                                aria-label="X"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaXTwitter />
-                            </a>
 
-                            <a
-                                href="#"
-                                aria-label="LinkedIn"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaLinkedinIn />
-                            </a>
+
+
 
                         </div>
 
