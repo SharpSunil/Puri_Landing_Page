@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import "./Properties.scss";
 import PropertyCard from "../PropertyCard/PropertyCard";
 
-import propertyImg1 from "../../assets/img-1.jpg";
-import propertyImg2 from "../../assets/img-3.jpg";
+import propertyImg1 from "../../assets/img/property1.png";
+import propertyImg2 from "../../assets/img/property2.png";
+import propertyImg3 from "../../assets/img/property3.png";
 import { FiMapPin } from "react-icons/fi";
 
 const Properties = () => {
@@ -224,7 +225,7 @@ const Properties = () => {
 
         {
             id: 3,
-            image: propertyImg1,
+            image: propertyImg3,
             status: "FOR SALE",
             location: "Mohammed Wadi, NIBM Road, Pune",
             title: "Aura Aiwa",

@@ -1,132 +1,205 @@
 import React from "react";
+import { useParams, Link } from "react-router-dom";
 import "./news_details.scss";
 
-import newsImage from "../../assets/news-details.jpg";
+import newsData from "../newsData";
 
 const News_details = () => {
+    const { id } = useParams();
+
+    // Find selected property/news
+    const news = newsData.find(
+        (item) => item.id === Number(id)
+    );
+
+    // ------------------------------------------
+    // NEWS NOT FOUND
+    // ------------------------------------------
+    if (!news) {
+        return (
+            <section className="news-not-found parent">
+
+                <div className="news-not-found-cont cont">
+
+                    <h2>
+                        Property Not Found
+                    </h2>
+
+                    <p>
+                        Sorry, the property you are looking for
+                        could not be found.
+                    </p>
+
+                    <Link
+                        to="/#properties"
+                        className="back-btn"
+                    >
+                        Back to Properties
+                    </Link>
+
+                </div>
+
+            </section>
+        );
+    }
+
     return (
-        <div className="news-details-parent parent">
+        <section className="news-details-parent parent">
+
             <div className="news-details-cont cont">
 
-                {/* Article Header */}
+                {/* ==========================================
+                    ARTICLE HEADER
+                ========================================== */}
+
                 <div className="news-details-header">
 
+                    {/* Tag */}
+                    <div className="news-tag">
+                        {news.tag}
+                    </div>
+
+                    {/* Title */}
                     <h1>
-                        Indonesia to Host ASEAN Climate Summit 2025
+                        {news.title}
                     </h1>
 
+                    {/* Meta */}
                     <div className="news-meta">
 
-                        <div className="author">
-                            <span className="author-avatar">
-                                R
-                            </span>
+                        <span>
+                            Puri
+                        </span>
 
-                            <span className="author-name">
-                                Rina Wulandari
-                            </span>
-                        </div>
+                        <span className="dot">
+                            •
+                        </span>
 
-                        <span className="dot">•</span>
+                        <span>
+                            Real Estate
+                        </span>
 
-                        <span>Politics</span>
+                        <span className="dot">
+                            •
+                        </span>
 
-                        <span className="dot">•</span>
-
-                        <span>June 24, 2025</span>
+                        <span>
+                            August 20, 2026
+                        </span>
 
                     </div>
 
                 </div>
 
-                {/* Featured Image */}
+
+                {/* ==========================================
+                    FEATURED IMAGE
+                ========================================== */}
+
                 <div className="news-featured-image">
+
                     <img
-                        src={newsImage}
-                        alt="Indonesia to Host ASEAN Climate Summit 2025"
+                        src={news.image}
+                        alt={news.title}
                     />
+
                 </div>
 
-                {/* Article Content */}
+
+                {/* ==========================================
+                    ARTICLE CONTENT
+                ========================================== */}
+
                 <article className="news-content">
 
+                    {/* Main heading */}
                     <h2>
-                        Jakarta, Indonesia –
+                        {news.title}
                     </h2>
 
-                    <p>
-                        Indonesia has officially been selected as the host country
-                        for the ASEAN Climate Summit 2025, marking a historic
-                        milestone in the nation's diplomatic and environmental
-                        efforts. This will be the first time a Southeast Asian
-                        country leads the summit with a full green energy and
-                        sustainability agenda.
+                    {/* Introduction */}
+                    <p className="intro">
+                        {news.description}
                     </p>
 
-                    <p>
-                        The announcement was made during the ASEAN Ministerial
-                        Meeting held in Kuala Lumpur last weekend. Indonesia's
-                        proposal stood out for its ambitious commitment to
-                        renewable energy, climate resilience programs, and
-                        sustainable urban development.
-                    </p>
 
-                    <h3>
-                        A Regional Focus on Climate Action
-                    </h3>
+                    {/* Content Sections */}
+                    {news.content?.map(
+                        (section, index) => (
 
-                    <p>
-                        The summit, scheduled for November 2025, will bring
-                        together leaders and environmental ministers from all
-                        10 ASEAN member states, along with invited observers
-                        from the European Union, Japan, and Australia.
-                    </p>
+                            <div
+                                className="content-section"
+                                key={index}
+                            >
 
-                    <p>
-                        Key discussion topics will include:
-                    </p>
+                                {/* Section Heading */}
+                                <h3>
+                                    {section.heading}
+                                </h3>
 
-                    <ul>
-                        <li>
-                            Renewable Energy Transition Roadmap for Southeast Asia
-                        </li>
 
-                        <li>
-                            Cross-Border Climate Financing Initiatives
-                        </li>
+                                {/* Paragraphs */}
+                                {section.paragraphs?.map(
+                                    (
+                                        paragraph,
+                                        paragraphIndex
+                                    ) => (
 
-                        <li>
-                            Sustainable Urban Development
-                        </li>
+                                        <p
+                                            key={paragraphIndex}
+                                        >
+                                            {paragraph}
+                                        </p>
 
-                        <li>
-                            Climate Resilience and Disaster Management
-                        </li>
-                    </ul>
+                                    )
+                                )}
 
-                    <h3>
-                        Indonesia's Commitment to Sustainability
-                    </h3>
+                            </div>
 
-                    <p>
-                        Indonesia has continued to strengthen its commitment
-                        towards sustainable development and environmental
-                        protection. The upcoming summit is expected to create
-                        new opportunities for regional cooperation and
-                        long-term climate initiatives.
-                    </p>
+                        )
+                    )}
 
-                    <p>
-                        With representatives from across the region expected
-                        to attend, the event will provide an important platform
-                        for ASEAN countries to discuss practical solutions to
-                        some of the most pressing environmental challenges.
-                    </p>
+
+                    {/* ==========================================
+                        LOCATION BUTTON
+                    ========================================== */}
+
+                    {news.location && (
+                        <div className="location-wrapper">
+
+                            <a
+                                href={news.location}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="location-btn"
+                            >
+                                View Property Location
+                            </a>
+
+                        </div>
+                    )}
+
+
+                    {/* ==========================================
+                        BACK TO PROPERTIES
+                    ========================================== */}
+
+                    <div className="back-wrapper">
+
+                        <Link
+                            to="/#properties"
+                            className="back-btn"
+                        >
+                            ← Back to Properties
+                        </Link>
+
+                    </div>
 
                 </article>
 
             </div>
-        </div>
+
+        </section>
     );
 };
 

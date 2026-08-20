@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Header.scss";
 import Logo from "../../assets/main-logo.png";
 
+import { Link } from "react-router-dom";
+
 import { FiPhoneCall } from "react-icons/fi";
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
@@ -31,13 +33,14 @@ const Header = () => {
                 <div className="header-cont cont">
 
                     {/* Logo */}
-                    <a
-                        href="#home"
+                    <Link
+                        to="/"
                         className="logo"
                         onClick={handleMenuClick}
                     >
                         <img src={Logo} alt="Logo" />
-                    </a>
+                    </Link>
+
 
                     {/* Desktop Menu */}
                     <div className="right-side">
@@ -45,59 +48,64 @@ const Header = () => {
                         <ul className="menu">
 
                             <li className="active">
-                                <a
-                                    href="#home"
+                                <Link
+                                    to="/"
                                     onClick={handleMenuClick}
                                 >
                                     HOME
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#about"
+                                <Link
+                                    to="/#about"
                                     onClick={handleMenuClick}
                                 >
                                     ABOUT
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#properties"
+                                <Link
+                                    to="/#properties"
                                     onClick={handleMenuClick}
                                 >
                                     PROPERTIES
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#services"
+                                <Link
+                                    to="/#services"
                                     onClick={handleMenuClick}
                                 >
                                     SERVICES
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#contact"
+                                <Link
+                                    to="/#contact"
                                     onClick={handleMenuClick}
                                 >
                                     CONTACT
-                                </a>
+                                </Link>
                             </li>
 
                         </ul>
 
+
                         {/* Phone */}
-                        <a href="tel:+919420214437" className="contact">
+                        <a
+                            href="tel:+919420214437"
+                            className="contact"
+                        >
                             <FiPhoneCall />
                             <span>9420214437</span>
                         </a>
 
                     </div>
+
 
                     {/* Mobile Menu Button */}
                     <button
@@ -106,28 +114,23 @@ const Header = () => {
                         onClick={() => setMobileMenu(!mobileMenu)}
                         aria-label="Toggle menu"
                     >
-                        {mobileMenu ? <IoClose /> : <CiMenuFries />}
+                        {mobileMenu ? (
+                            <IoClose />
+                        ) : (
+                            <CiMenuFries />
+                        )}
                     </button>
+
 
                     {/* Mobile Menu */}
                     <div
-                        className={`mobile-menu ${mobileMenu ? "show" : ""
-                            }`}
+                        className={`mobile-menu ${
+                            mobileMenu ? "show" : ""
+                        }`}
                     >
 
                         {/* Mobile Header */}
                         <div className="mobile-header">
-
-                            {/* <a
-                                href="#home"
-                                className="mobile-logo"
-                                onClick={handleMenuClick}
-                            >
-                                <img
-                                    src={Logo}
-                                    alt="Logo"
-                                />
-                            </a> */}
 
                             <button
                                 type="button"
@@ -140,58 +143,63 @@ const Header = () => {
 
                         </div>
 
+
                         {/* Mobile Navigation */}
                         <ul className="menu">
 
                             <li>
-                                <a
-                                    href="#home"
+                                <Link
+                                    to="/"
                                     onClick={handleMenuClick}
                                 >
                                     HOME
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#about"
+                                <Link
+                                    to="/#about"
                                     onClick={handleMenuClick}
                                 >
                                     ABOUT
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#properties"
+                                <Link
+                                    to="/#properties"
                                     onClick={handleMenuClick}
                                 >
                                     PROPERTIES
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#services"
+                                <Link
+                                    to="/#services"
                                     onClick={handleMenuClick}
                                 >
                                     SERVICES
-                                </a>
+                                </Link>
                             </li>
 
                             <li>
-                                <a
-                                    href="#contact"
+                                <Link
+                                    to="/#contact"
                                     onClick={handleMenuClick}
                                 >
                                     CONTACT
-                                </a>
+                                </Link>
                             </li>
 
                         </ul>
 
+
                         {/* Mobile Phone */}
-                        <a href="tel:+919420214437" className="contact">
+                        <a
+                            href="tel:+919420214437"
+                            className="contact"
+                        >
                             <FiPhoneCall />
                             <span>9420214437</span>
                         </a>
