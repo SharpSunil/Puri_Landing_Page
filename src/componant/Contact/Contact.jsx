@@ -5,7 +5,7 @@ import { TiArrowRight } from "react-icons/ti";
 const Contact = () => {
 
     const GOOGLE_SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbzl7KGE7nBIXuhsjemTM3kpXMD2dqPabUHWzNt-5pdFLxh7ba--2Mn0xraSA75_J0rhYA/exec";
+        "https://script.google.com/macros/s/AKfycbwPqAfp4rDdKP1g5mRvi8YT9bNSnnqp3uYT_JUBvT5C5QfMZSNmUa_vgGxyMOouj6OnsA/exec";
 
     const [formData, setFormData] = useState({
         name: "",

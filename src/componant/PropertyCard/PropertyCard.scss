@@ -86,9 +86,9 @@
     .property-features {
       display: flex;
       gap: 10px;
-      width:100%;
+      width: 100%;
       .feature {
-        width:calc(100% / 3 - 10px);
+        width: calc(100% / 3 - 10px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -180,8 +180,8 @@
       }
       .property-features {
         flex-wrap: wrap;
-        .feature{
-          width:48%;
+        .feature {
+          width: 48%;
         }
       }
     }
