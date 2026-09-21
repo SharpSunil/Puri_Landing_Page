@@ -20,8 +20,8 @@ const Properties = () => {
             title: "Empire Legacy",
             price: "Price On Request",
             bedrooms: "2 BHK",
-            bathrooms: "3 BHK",
-            area: "666–1166",
+            bathrooms: "2",
+            area: "1161",
             reverse: false,
 
             description:
@@ -130,8 +130,8 @@ const Properties = () => {
             title: "Katraj's Most Awaited Landmark",
             price: "₹95 L - ₹1.40 Cr*",
             bedrooms: "2 & 3",
-            bathrooms: "820–1200",
-            area: "2",
+            bathrooms: "2 - 3",
+            area: "820–1200",
             reverse: true,
 
             description:
@@ -232,8 +232,8 @@ const Properties = () => {
             title: "Aura Aiwa",
             price: "₹1.53 Cr - ₹2.03 Cr*",
             bedrooms: "3 BHK",
-            bathrooms: "3.5 BHK",
-            area: "4 BHK",
+            bathrooms: "3",
+            area: "1161",
             reverse: false,
 
             description:
